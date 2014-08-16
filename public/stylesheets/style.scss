@@ -52,6 +52,7 @@ $alert-info-text: #25484e;
 
 body {
 	padding-bottom: 20px;
+	background-color: $body-bg;
 }
 
 em {
@@ -92,6 +93,10 @@ em {
 .jumbotron {
 	margin-top: -20px;
 	border-bottom: 1px solid #dae2e4;
+}
+
+.media {
+	float: left;
 }
 
 .media-object {

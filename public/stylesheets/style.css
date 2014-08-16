@@ -1,7 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 @import url(lib/bootstrap.min.css);
 body {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  background-color: #e4e7ec; }
 
 em {
   font-style: normal;
@@ -28,6 +29,9 @@ em {
 .jumbotron {
   margin-top: -20px;
   border-bottom: 1px solid #dae2e4; }
+
+.media {
+  float: left; }
 
 .media-object {
   max-width: 200px;

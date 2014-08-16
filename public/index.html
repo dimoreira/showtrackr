@@ -11,7 +11,7 @@
 	</head>
 	<body>
 
-		<div class="navbar navbar-default navbar-static-top" role="navigation" bs-navbar>
+		<div ng-controller="NavbarCtrl" class="navbar navbar-default navbar-static-top" role="navigation" bs-navbar>
 			<div class="navbar-header">
 				<a class="navbar-brand" href="/">
 					<span class="glyphicon glyphicon-film"></span>
@@ -21,14 +21,6 @@
 			<ul class="nav navbar-nav">
 				<li data-match-route="/$"><a href="/">Home</a></li>
 				<li data-match-route="/add"><a href="/add">Add</a></li>
-			</ul>
-			<ul class="nav navbar-nav pull-right" ng-if="!currentUser">
-				<li data-match-route="/login"><a href="/login">Login</a></li>
-				<li data-match-route="/signup"><a href="/signup">Sign up</a></li>
-			</ul>
-			<ul class="nav navbar-nav pull-right" ng-if="currentUser">
-				<li class="navbar-text" ng-bind="currentUser.email"></li>
-				<li><a href="javascript:void(0)" ng-click="logout()">Logout</a></li>
 			</ul>
 		</div>
 
@@ -44,5 +36,11 @@
 		<script src="/javascripts/lib/moment.min.js"></script>
 
 		<script src="/javascripts/app.js"></script>
+		<script src="/javascripts/services/show.js"></script>
+		<script src="/javascripts/filters/fromNow.js"></script>
+		<script src="/javascripts/controllers/navbar.js"></script>
+		<script src="/javascripts/controllers/main.js"></script>
+		<!-- <script src="/javascripts/controllers/add.js"></script> -->
+		<script src="/javascripts/controllers/detail.js"></script>
 	</body>
 </html>
